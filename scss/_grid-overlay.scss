@@ -1,0 +1,17 @@
+.grid-overlay {
+
+  &:after {
+    content: '';
+    position: fixed;
+    top: 60px; // to offset toolbar
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: .3;
+    background-image: repeating-linear-gradient(90deg, transparent 0, transparent 1.13636%, $color-blue-40 1.13636%, $color-blue-40 7.19697%, transparent 7.19697%, transparent 8.33333%);
+    z-index: 9999;
+    pointer-events: none;
+    max-width: 1056px;
+    margin: 0 auto;
+  }
+}
