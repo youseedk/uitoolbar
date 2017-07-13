@@ -10,7 +10,6 @@ gulp.task('scss', function() {
   .pipe(gulp.dest('./dist'));
 });
 
-
 gulp.task('js', function() {
   const sourcefile = './js/uitoolbar.js';
   const fileName = path.basename(sourcefile);
@@ -20,8 +19,6 @@ gulp.task('js', function() {
   .bundle()
   .pipe(source(fileName))
   .pipe(gulp.dest('./dist'));
-
 });
 
-gulp.task('default', ['scss', 'js'], function() {
-}); 
+gulp.task('default', ['scss', 'js'], function() {}); 
