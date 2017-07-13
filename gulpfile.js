@@ -24,4 +24,4 @@ gulp.task('js', function() {
 });
 
 gulp.task('default', ['scss', 'js'], function() {
-});
+}); 
