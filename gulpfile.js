@@ -4,8 +4,6 @@ const sass = require('gulp-sass');
 const path = require('path');
 const source = require('vinyl-source-stream');
 
-
-
 gulp.task('scss', function() {
   gulp.src('./scss/uitoolbar.scss')
   .pipe(sass().on('error', sass.logError))
