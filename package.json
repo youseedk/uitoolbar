@@ -1,0 +1,19 @@
+{
+  "name": "UIToolbar",
+  "version": "0.1.0",
+  "description": "A tool created for developers working with user interfaces",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/youseedk/uitoolbar.git"
+  },
+  "author": "Yousee",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "browserify": "^14.4.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
+    "path": "^0.12.7",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
