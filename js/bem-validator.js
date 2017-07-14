@@ -1,3 +1,4 @@
+// Debug version: 1
 var runValidator = (function() {
   // define variables, strings etc.
   var msgPane = document.createElement('div');
