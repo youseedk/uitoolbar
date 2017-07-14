@@ -1,5 +1,6 @@
 var bem = require('./bem-validator');
 var html = require('./html-validator');
+var a11y = require('./tota11y.min');
 
 var debugbar = (function() {
   var debugbarNav = document.createElement('nav');
@@ -68,6 +69,12 @@ var debugbar = (function() {
       bem.runValidator();
       document.querySelector('.bem-resultpane').classList.add('slideInUp');
     }
+  });
+
+  /* a11y Validate button */
+  var htmlValidateButton = document.querySelector('.debug-bar__button--a11yvalidate');
+  htmlValidateButton.addEventListener('click', function() {
+    a11y.toggle();
   });
 
   /* Close Button */
