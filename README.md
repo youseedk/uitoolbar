@@ -9,7 +9,7 @@ Chrome: Right-click on the bookmarks bar and choose "Add Page". Give the bookmar
 
 ## Code
 ```javascript
-javascript:!function(){if(!document.getElementById("debugscript")){var b=document.createElement("script");b.src="https://youseedk.github.io/uitoolbar/dist/uitoolbar.js",b.id="debugscript",document.head?document.head.appendChild(b):document.getElementsByTagName("head")[0].appendChild(b)}}();
+javascript:!function(){if(!document.getElementById("debugscript")){var b=document.createElement("script");b.src="https://youseedk.github.io/uitoolbar/uitoolbar.js",b.id="debugscript",document.head?document.head.appendChild(b):document.getElementsByTagName("head")[0].appendChild(b)}}();
 ```
 
 ## Usage
