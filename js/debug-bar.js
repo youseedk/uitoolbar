@@ -76,6 +76,11 @@ var debugbar = (function() {
     location.reload();
   });
 
+  /* Load and append tota11y from CDN */
+  const script = document.createElement('script');
+  script.setAttribute('src','https://cdnjs.cloudflare.com/ajax/libs/tota11y/0.1.6/tota11y.min.js');
+  document.head.appendChild(script);
+
   /* append the bar */
   document.body.classList.add('is-debugbar');
   document.body.insertBefore(debugbarNav, document.body.firstChild);
