@@ -1,7 +1,4 @@
-﻿//Many animations removed because we only use two animations.
-/* stylelint-disable */
-
-@charset "UTF-8";
+﻿@charset "UTF-8";
 
 .animated {
   -webkit-animation-duration: 1s;
@@ -71,4 +68,3 @@
     transform: translate3d(-100%, 0, 0);
   }
 }
-/* stylelint-enable */
