@@ -2,6 +2,9 @@
   "name": "UIToolbar",
   "version": "0.1.0",
   "description": "A tool created for developers working with user interfaces",
+  "scripts": {
+    "build": "./node_modules/.bin/gulp"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/youseedk/uitoolbar.git"
