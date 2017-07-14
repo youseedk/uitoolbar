@@ -1,5 +1,6 @@
 # UI Toolbar
 A tool created for developers working with user interfaces
+[![Build Status](https://travis-ci.org/youseedk/uitoolbar.svg?branch=master)](https://travis-ci.org/youseedk/uitoolbar)
 
 ## Note
 This is still work in progress
