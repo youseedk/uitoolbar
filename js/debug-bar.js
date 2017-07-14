@@ -1,6 +1,5 @@
 var bem = require('./bem-validator');
 var html = require('./html-validator');
-var a11y = require('./tota11y.min');
 
 var debugbar = (function() {
   var debugbarNav = document.createElement('nav');
@@ -76,6 +75,11 @@ var debugbar = (function() {
   closeButton.addEventListener('click', function() {
     location.reload();
   });
+
+  /* Load and append tota11y from CDN */
+  const script = document.createElement('script');
+  script.setAttribute('src','https://cdnjs.cloudflare.com/ajax/libs/tota11y/0.1.6/tota11y.min.js');
+  document.head.appendChild(script);
 
   /* append the bar */
   document.body.classList.add('is-debugbar');
