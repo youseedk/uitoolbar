@@ -71,12 +71,6 @@ var debugbar = (function() {
     }
   });
 
-  /* a11y Validate button */
-  var htmlValidateButton = document.querySelector('.debug-bar__button--a11yvalidate');
-  htmlValidateButton.addEventListener('click', function() {
-    a11y.toggle();
-  });
-
   /* Close Button */
   var closeButton = document.querySelector('.debug-bar__button--close');
   closeButton.addEventListener('click', function() {
