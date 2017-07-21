@@ -10,7 +10,7 @@
     "url": "https://github.com/youseedk/uitoolbar.git"
   },
   "author": "Yousee",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {},
   "devDependencies": {
     "browserify": "^14.4.0",
