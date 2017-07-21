@@ -21,9 +21,4 @@ gulp.task('js', function() {
   .pipe(gulp.dest('./dist'));
 });
 
-gulp.task('gfx', function() {
-  gulp.src('./gfx/bookmarklet.png')
-  .pipe(gulp.dest('./dist'));
-});
-
 gulp.task('default', ['scss', 'js', 'gfx'], function() {}); 
