@@ -8,7 +8,7 @@ This is still work in progress
 
 Option 1: Click this button and drag it to your bookmarks bar. It's that simple.
 
-[![UI Toolbar](https://youseedk.github.io/uitoolbar/bookmarklet.png)](javascript:!function(){if(!document.getElementById('debugscript')){var b=document.createElement('script');b.src='https://youseedk.github.io/uitoolbar/uitoolbar.js',b.id='debugscript',document.head?document.head.appendChild(b):document.getElementsByTagName('head')[0].appendChild(b)}}();)
+[![UI Toolbar](https://youseedk.github.io/uitoolbar/bookmarklet.png)](javascript:!function\(\){if\(!document.getElementById\('debugscript'\)\){var b=document.createElement\('script'\);b.src='https://youseedk.github.io/uitoolbar/uitoolbar.js',b.id='debugscript',document.head?document.head.appendChild\(b\):document.getElementsByTagName\('head'\)[0].appendChild\(b\)}}\(\);)
 
 
 Option 2: Right-click on the bookmarks bar and choose "Add Page". Give the bookmarklet a title ("UI Toolbar" would be good) and paste below code into the URL field. 
