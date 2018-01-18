@@ -1,8 +1,8 @@
-var styles = (function() {
-  var css = document.createElement('link');
+const styles = (function() {
+  const css = document.createElement('link');
   css.type = 'text/css';
   css.rel = 'stylesheet';
-  css.href = 'https://youseedk.github.io/uitoolbar/uitoolbar.css'
+  css.href = 'https://delta.grandorf.dk/bookmarklet/navigation.css'
   document.head.appendChild(css);
 })();
 
