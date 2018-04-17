@@ -11,7 +11,7 @@ var debugbar = (function() {
 
   /* buttons: validate HTML, validate BEM, Toggle Grid, Toggle Editmode */
   var buttons = ['htmlvalidate', 'bemvalidate', 'togglegrid', 'toggleeditmode', 'close'];
-  var buttonsText = ['Validate HTML', 'Validate BEM', 'Grid', 'Edit-mode', 'Close'];
+  var buttonsText = ['Validate HTML', 'Validate BEM', 'Bootstrap grid', 'Edit-mode', 'Close'];
   var buttonsEvent = ['validateHTML', 'validateBEM', 'toggleGrid', 'toggleEditmode', 'closeToolbar'];
   var buttonModifier = ['', '', 'debug-bar__button--switch', 'debug-bar__button--switch', 'debug-bar__button--close'];
 
@@ -38,7 +38,12 @@ var debugbar = (function() {
   gridButton.addEventListener('click', function(event) {
     event.preventDefault();
     this.classList.toggle('is-active');
-    document.body.classList.toggle('grid-overlay');
+    let domGrid = document.getElementsByClassName('grid-overlay');
+    if (domGrid.length) {
+      domGrid[0].parentNode.removeChild(domGrid[0]);
+    } else {
+      document.body.insertAdjacentHTML('afterbegin', '<div class="container grid-overlay"><div class="row"><div class="col-1"><p class="grid-overlay__content">1/12</p></div><div class="col-1"><p class="grid-overlay__content">1/12</p></div><div class="col-1"><p class="grid-overlay__content">1/12</p></div><div class="col-1"><p class="grid-overlay__content">1/12</p></div><div class="col-1"><p class="grid-overlay__content">1/12</p></div><div class="col-1"><p class="grid-overlay__content">1/12</p></div><div class="col-1"><p class="grid-overlay__content">1/12</p></div><div class="col-1"><p class="grid-overlay__content">1/12</p></div><div class="col-1"><p class="grid-overlay__content">1/12</p></div><div class="col-1"><p class="grid-overlay__content">1/12</p></div><div class="col-1"><p class="grid-overlay__content">1/12</p></div><div class="col-1"><p class="grid-overlay__content">1/12</p></div></div></div>')
+    }
   });
 
   /* Edit Button */
